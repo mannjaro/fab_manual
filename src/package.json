@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "dev": "npx docsify serve ./docs",
+    "build": "npx docsify generate ./docs"
+  },
+  "dependencies": {
+    "docsify-cli": "^4.4.4"
+  }
+}
