@@ -1,7 +1,7 @@
 # サーバーの基本情報
 
 大学で借りられるパブリッククラウドVPSを利用しています.  
-[パブリッククラウドVPSサービス(学内専用)](https://vpns.cis.kit.ac.jp/proxy/4f8f0d6c/https/www.cis.kit.ac.jp/services/public_cloud_vps/)
+[パブリッククラウドVPSサービス(学内専用)](https://www.cis.kit.ac.jp/services/public_cloud_vps/)
 
 ## 接続先(SSH)
 

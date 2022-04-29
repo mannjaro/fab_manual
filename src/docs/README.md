@@ -6,16 +6,16 @@
 - e-mail: zk.takayuki@gmail.com
 - Twitter: [@tasks_sch](https://twitter.com/tasks_sch)
 
-## 初めに読むページ
+## 初めに読むページ　<!-- {docsify-ignore} -->
 
 - [サーバーへの接続方法](ssh.md)
 - [サーバーの基本情報](info.md)
 - [Wordpressの使い方](admin.md)
 
-## ターミナル操作が初めての人
+## ターミナル操作が初めての人 <!-- {docsify-ignore} -->
 
 - [基本的なコマンド](command.md)
 
-## サーバーの操作
+## サーバーの操作 <!-- {docsify-ignore} -->
 
 - [dockerコマンド集](essential.md)

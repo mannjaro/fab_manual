@@ -7,3 +7,4 @@
 * [証明書申請手順](certificate.md "証明書申請")
 * [基本的なコマンド集](command.md "コマンド集")
 * [dockerコマンド集](essential.md "dockerコマンド")
+* [バックアップからの復元](recover.md "バックアップからの復元")
