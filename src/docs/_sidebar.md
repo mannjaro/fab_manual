@@ -8,3 +8,4 @@
 * [基本的なコマンド集](command.md "コマンド集")
 * [dockerコマンド集](essential.md "dockerコマンド")
 * [バックアップからの復元](recover.md "バックアップからの復元")
+* [証明書更新手順](cert_update.md "証明書更新")
