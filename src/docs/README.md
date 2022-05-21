@@ -1,21 +1,35 @@
 <!-- omit in toc -->
-# オープンファシリティセンターものづくりユニット（旧ものづくりセンター）HP運用保守手順書
+# センターHP運用手順書
 
 ## ドキュメント作成者 <!-- {docsify-ignore} -->
 
 - e-mail: zk.takayuki@gmail.com
 - Twitter: [@tasks_sch](https://twitter.com/tasks_sch)
 
-## 初めに読むページ　<!-- {docsify-ignore} -->
+## ドキュメントの見方
 
-- [サーバーへの接続方法](ssh.md)
-- [サーバーの基本情報](info.md)
-- [Wordpressの使い方](admin.md)
+ドキュメント中には`{ユーザー名}`のように括弧で囲った表記がありますが，それらは適宜状況によって置き換えが発生する箇所を指します
+例えば，
 
-## ターミナル操作が初めての人 <!-- {docsify-ignore} -->
+```sh
+ssh -i ~/.ssh/id_rsa {ユーザー名}@www.monodukuri.kit.ac.jp
+```
 
-- [基本的なコマンド](command.md)
+ユーザー名が`hogehoge`だった場合
 
-## サーバーの操作 <!-- {docsify-ignore} -->
+```sh
+ssh -i ~/.ssh/id_rsa hogehoge@www.monodukuri.kit.ac.jp
+```
 
-- [dockerコマンド集](essential.md)
+のように置き換えて読んでください．
+
+## FAQ
+### サーバーに接続するには?
+
+- [接続方法](ssh.md)
+- [サーバーの情報](info.md)
+
+### SSL証明書の更新方法
+
+- [証明書申請手順](certificate.md)
+- [証明書の設定方法](cert_update.md)

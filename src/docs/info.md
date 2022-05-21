@@ -13,36 +13,28 @@
 Wordpressのファイルやdocker-compose.ymlなど，運用に必要なファイルは全て
 `/usr/local/workspace`にあります
 
-`/usr/local/workspace`以下は次のようなディレクトリ構成です  
-コメントをつけたファイルやディレクトリ以外は利用していないので，無視してください
-
 ```sh
-/usr/local/workspace
-
 .
-|-- backup
-|   |-- 2022-04-13_17-16-14_5GDLPAWE01.tar.gz <- バックアップファイル
-|   `-- index.php
-|-- docker-compose.yaml <- wordpressやデータベースを管理するファイル．基本的に触らない
-|-- kit_factory_wordpress.sql <- データベースがダンプされたファイル．基本的に触らない
-|-- kit-wp
-|   |-- license.txt
-|   |-- wp-activate.php
-|   |-- wp-admin
-|   |-- wp-blog-header.php
-|   |-- wp-config-docker.php
-|   |-- wp-config.php <- 設定に問題がある場合に編集する．あまり触らない
-|   |-- wp-config-sample.php
-|   |-- wp-content <- テーマなどが格納されているフォルダ．まあまあ触る
-|   |-- wp-cron.php
-|   |-- wp-includes
-|   |-- wp-links-opml.php
-|   |-- wp-login.php
-|   |-- wp-settings.php
-|   |-- wp-trackback.php
-|   `-- xmlrpc.php
-`-- wordpress
-    `-- Dockerfile <- wordpressのイメージを定義しているファイル．基本的に触らない
+├── backup
+│   ├── 2022-05-21_12-10-22_UODLPAXB01.tar.gz <- バックアップファイル
+│   ├── 2022-05-21_20-55-33_RCDLPAW601.tar.gz
+│   ├── index.php
+│   └── kit_factory_wordpress.sql <- データベースがダンプされたファイル．基本的に触らない
+├── cis_cert
+│   ├── certs <- 証明書が入ってる
+│   ├── chain <- 中間証明書が入ってる
+│   ├── conf.d <- sslのコンフィグが入ってる
+│   └── private <- 秘密鍵が入ってる
+├── cron
+│   ├── crontab <- 定期実行の定義が入ってる
+│   └── Dockerfile <- 触らない
+├── docker-compose.yaml <- wordpressやデータベースを管理するファイル．基本的に触らない
+├── kit_factory_wordpress.sql <- データベースのダンプファイル．
+├── kit-wp
+│   ├── wp-config.php <- 設定に問題がある場合に編集する．あまり触らない
+│   └── wp-content <- テーマなどが格納されているフォルダ．まあまあ触る
+└── wordpress
+    └── Dockerfile <- wordpressのイメージを定義しているファイル．基本的に触らない
 ```
 
 ### テーマファイルの中身

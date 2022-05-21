@@ -11,7 +11,7 @@ DockerとDocker composeについてはここで説明しないので以下のサ
 
 ## 起動・停止に関するコマンド
 
-> 以下のコマンドは`docker-compose.yml`ファイルがあるディレクトリ上(/usr/local/workspace)でのみ機能します
+?>NOTE: 以下のコマンドは`docker-compose.yml`ファイルがあるディレクトリ`/usr/local/workspace`でのみ機能します
 
 ```bash
 cd /usr/local/workspace
@@ -20,38 +20,38 @@ cd /usr/local/workspace
 ### Wordpressサーバーの起動
 
 ```bash
-sudo docker-compose up -d
+docker-compose up -d
 ```
 
 ### Wordpressサーバーの停止
 
 ```bash
-sudo docker-compose down
+docker-compose down
 ```
 
 ### Wordpressサーバー状態の確認
 
 ```bash
-sudo docker-compose ps
+docker-compose ps
 ```
 
 ### Wordpressサーバーの再ビルド
 
 ```bash
-sudo docker-compose build
+docker-compose build
 ```
 
 キャッシュを用いずにビルドする場合
 
 ```bash
-sudo docker-compose build --no-cache
+docker-compose build --no-cache
 ```
 
 ### 永続データの削除(使用する前にバックアップを確認すること！)
 
 ```bash
-sudo docker volume rm workspace_db_data
-sudo docker volume rm workspace_wp-content
+docker volume rm workspace_db_data
+docker volume rm workspace_wp-content
 ```
 
 ## コマンドの利用ケース
@@ -60,27 +60,27 @@ sudo docker volume rm workspace_wp-content
 
 ```bash
 cd /usr/local/workspace
-sudo docker-compose down
+docker-compose down
 ```
 
 作業が終わったら，サーバーを起動させる
 
 ```bash
-sudo docker-compose up -d
+docker-compose up -d
 ```
 
 ### WordpressやPHPのバージョンを上げる場合
 
 ```bash
-sudo docker-compose down
-sudo docker-compose build --no-cache
-sudo docker-compose up -d
+docker-compose down
+docker-compose build --no-cache
+docker-compose up -d
 ```
 
 ### サーバー上から全てのデータを削除する場合
 
 ```bash
-sudo docker-compose down
-sudo docker volume rm workspace_db_data
-sudo docker volume rm workspace_wp-content
+docker-compose down
+docker volume rm workspace_db_data
+docker volume rm workspace_wp-content
 ```
